@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   <style type="text/css">
+        .container{
+            border: 1px solid black;
+            height: 500px;
+        }
+
+        .container div{
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+        }
+
+        #di{
+            position: static;
+            left: 100px;
+            top: 100px;
+        }
+         #d2{
+            /* position relative overlap bhi krti hai */
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        #d3{
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+   </style>
+
+<body>
+    <div class="container">
+        <div id="d1"  style="background-color: gray;">div 1 </div>
+        <div id="d2" style="background-color: burlywood;">div 2 </div>
+        <div id="d3" style="background-color: gray;">div 3 </div>
+        <div id="d4" style="background-color: burlywood;">div 4 </div>
+    </div>
+
+
+
+    <!-- position are five types static , relative , fixed , absolute ,  sticky 
+   
+    static : by default position is static static positioned element are not affected by the top , bottom , left , right properties
+     an element with position static is not positioned in any special way it always occupies the normal flow of the page 
+     
+     relative : an element with position relative is positioned relative to its normal position 
+     
+     absolute :  an element with position absolute is positioned relative to the nearest positioned ancestor(parent element and parent ka parent ) 
+                 absolute positioned element are removed from the normal flow of the page and overlap other content -->
+</body>
+</html>

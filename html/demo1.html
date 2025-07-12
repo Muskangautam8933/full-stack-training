@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- default method get hota hai jisme sara data url me show hota hai aur action me vo page hote hai jaha hame data le jana hota hai -->
+  <form method="post" action="" enctype="multipart/form-data" autocomplete="off" novalidate>
+      <table border="1" width="400px" bgcolor="gray">
+        <thead>
+            <tr>
+                <td colspan="2" align="center">Form Demo</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>User Name</td>
+                <td><input type="text" placeholder="enter your name" maxlength="15"></td>
+            </tr>
+             <tr>
+                <td>Password</td>
+                <td><input type="password" placeholder="password" required minlength="8"></td>
+            </tr>
+             <tr>
+                <td>Email</td>
+                <td><input type="email" placeholder="enter your email" ></td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea rows="5" cols="30"></textarea>
+                </td>
+            </tr>
+             <tr>
+                <td>Date of birth</td>
+                <td><input type="date" minlength="2024-10-15" maxlength="2025-06-25"></td>
+            </tr>
+             <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gen">Male
+                <input type="radio" name="gen">Female</td>
+            </tr>
+
+            <tr>
+                <td>Hobbies</td>
+                <td><input type="checkbox" name="chk">Swimming
+                <input type="checkbox" name="chk">Dancing <br>
+                <input type="checkbox" name="chk">Reading
+                <input type="checkbox" name="chk">Singing</td>
+            </tr>
+
+            <tr>
+                <td>Qualifications</td>
+                <td>
+                 <select multiple > 
+                    <!-- multiple option select kr skte hai -->
+                    <option disabled selected >Select</option>
+                    <!-- selected bhi hogi aur disabled bhi -->
+                    <option selected >Btech</option> 
+                    <!-- by default selected value -->
+                    <option >BCA</option>
+                    <option >MCA</option>
+                    <option >MBA</option>
+                    <option >BSC</option>
+                    <option >BA</option>
+                    <option >BBA</option>
+                 </select>
+                </td>
+            </tr>
+
+
+             <tr>
+                <td>Home Town</td>
+                <td>
+                    <select >
+                        <optgroup label="up">
+                            <option >Select</option>
+                            <option >Delhi</option>
+                            <option >Mumbai</option>
+                        </optgroup>
+                       <optgroup label="MP">
+                            <option >Select</option>
+                            <option >Delhi</option>
+                            <option >Mumbai</option>
+                        </optgroup>
+                        <optgroup label="Rajasthan">
+                            <option >Select</option>
+                            <option >Delhi</option>
+                            <option >Mumbai</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+
+             <tr>
+                <td>University Name</td>
+                <td>
+                    <input type="text" list="mylist">
+                    <datalist id="mylist">
+                        <option >AKTU</option>
+                        <option >CSJMU</option>
+                        <option >HBTU</option>
+                        <option >LPU</option>
+                        <option >GBTU</option>
+                        <option >CU</option>
+                        <option >KIIT</option>
+                        <option >Rame University</option>
+                    </datalist>
+                </td>
+            </tr> 
+
+             <tr>
+                <td>Mobile NUmber</td>
+                <td><input type="tel"></td>
+            </tr> 
+
+            <tr>
+                <td>SGPA</td>
+                <td><input type="number" min="1" max="10" step="0.01"></td>
+            </tr>
+ 
+            <tr>
+                <td>Color</td>
+                <td>
+                    <input type="color">
+                </td>
+            </tr> 
+
+             <tr>
+                <td>Range</td>
+                <td>
+                    <input type="range" min="1" max="100">
+                </td>
+            </tr> 
+
+            <tr>
+                <td>Hidden</td>
+                <td><input type="hidden"></td>
+            </tr>
+
+            <tr>
+                <td>Search</td>
+                <td><input type="search"></td>
+            </tr>
+
+            <tr>
+                <td>Upload file</td>
+                <td><input type="file" accept=".doc,.docx , .pdf ,.jpg" multiple></td>
+            </tr>
+
+            <tr>
+                <td>Date and time</td>
+                <td><input type="datetime-local"></td>
+            </tr>
+
+            <tr>
+                <td>Month</td>
+                <td><input type="month"></td>
+            </tr>
+            <tr>
+                <td>Week</td>
+                <td><input type="week"></td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td><input type="time"></td>
+            </tr>
+             <tr> 
+                <td>
+                    <input type="submit">
+                    <input type="reset">
+                     <input type="button" value="button">
+                    <input type="image">
+                    <input type="text">
+
+                    <button type="submit">&#128512</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  </form>
+    
+</body>
+</html>
