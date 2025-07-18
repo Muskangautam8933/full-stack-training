@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+
+    .container{
+        height: 700px;
+        width: 700px;
+        border: 1px solid black;
+        display: flex;
+        /* flex-direction: row; */
+        /* flex-direction: column; (default)*/
+        /* flex-direction: column-reverse;
+        flex-direction: row-reverse; */
+
+        /* justify-content: center; */
+        /* justify-content: flex-start;
+         justify-content: flex-end; */
+         /* justify-content: space-between; */
+         /* justify-content: space-around; */
+         /* justify-content: space-evenly; */
+
+         /* align-items: center; */
+         /* align-content: center; */
+         /* flex-wrap: wrap; */
+
+         flex-flow: row wrap; /* flex-direction + flex-wrap */
+
+        
+    }
+
+    #mydiv1{
+        order: 3;
+        /* flex-grow: 1;
+        flex-shrink:1;
+        flex-basis: 200px; */
+        flex: 1 1 200px;    
+    }
+     #mydiv2{
+        order: 2;
+        flex-grow: 1;
+        flex-shrink: 3;
+        flex-basis: 100px;
+    }
+     #mydiv3{
+        order: 1;
+        flex-grow: 2;
+        flex-shrink: 1;
+        flex-basis: 200px;
+    }
+
+    .container>div{
+        height: 100px;
+        width: 100px;
+       text-align: center;
+    }
+
+    .container>div:nth-child(odd){
+        background-color: aquamarine;
+    }
+
+     .container>div:nth-child(even){
+        background-color: navajowhite;
+     }
+</style>
+<body>
+  
+
+      <div class="container">
+        <div id="mydiv1">div 1 </div>
+        <div id="mydiv2">div 2 </div>
+        <div id="mydiv3">div 3 </div>
+       
+      </div>
+
+
+<!-- flex-direction : row (default)
+     flex-direction :row-reverse 
+     flex-direction :column 
+     flex-direction : column-reverse -->
+
+     <!--shortcur = div.container>div#mydiv${div $ }*5 -->
+</body>
+</html>

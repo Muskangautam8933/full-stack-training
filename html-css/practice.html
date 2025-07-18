@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+
+   .container{
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    font-size: x-large;
+   } 
+   .container>*{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 100%;
+   }
+
+   .container>header{
+      line-height: 100px;
+      background-color: bisque;
+   }
+
+   .container>.main-content{
+    background-color: aquamarine;
+   }
+
+   .container>.aside1{
+    background-color: burlywood;
+   }
+
+   .container>.aside2{
+       background-color: coral;
+   }
+
+   .container>footer{
+       background-color: darkgoldenrod;
+   }
+   .container>nav{
+      line-height: 50px;
+      background-color: cadetblue;
+   }
+   @media screen and (min-width:1200px){
+     .main-content{
+        order: 2;
+        flex: 3 3 0%;
+        height: 500px;
+     }
+     .aside1{
+        order: 1;
+        flex: 1 1 0%;
+     }
+     .aside2{
+        order: 3;
+         flex: 1 1 0%;
+     }
+
+     .container>footer{
+        order: 4;
+     }
+   }
+
+    @media screen and (min-width:992px){
+     .main-content{
+        order: 2;
+        flex: 3 3 0%;
+        height: 500px;
+       
+     }
+     .aside1{
+        order: 1;
+        flex: 1 1 0%;
+     }
+     .aside2{
+        order: 3;
+         flex: 1 1 0%;
+     }
+
+     .container>footer{
+        order: 4;
+     }
+   }
+
+   @media screen and (min-width:768px) and (max-width:991px){
+    .main-content{
+        height: 500px;
+    } 
+    .aside1{
+        flex: 1 1 0%;
+      }
+      .aside2{
+        flex: 1 1 0%;
+      }
+
+   }
+</style>
+<body>
+  
+
+    <div class="container">
+
+        <header>
+         <h1>This is Header</h1>
+        </header>
+
+      <nav >
+          My Navigation
+      </nav>
+
+       <article class="main-content">
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt ipsam, facere dignissimos dolores, non natus quod reprehenderit voluptates sed hic et facilis maxime praesentium ipsum.</p>
+       </article>
+       <aside class="aside1">aside 1</aside>
+       <aside class="aside2">aside 2</aside>
+
+
+       
+       <footer>
+         footer
+       </footer>
+    </div>
+
+</body>
+</html>

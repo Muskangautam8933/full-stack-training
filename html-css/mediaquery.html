@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ <!--
+les than <  575px : extra small device
+            576px to 767px : small device
+            768px to 991px : medium device
+            992px to  1199px : large device
+            1200 >= : extra large device 
+      
+  -->
+
+     <style type="text/css">
+        /* @media screen and (orientation: landscape) {
+           body{
+            background-color: aqua;
+           }
+        }
+
+        @media screen and (orientation: portrait){
+            body{
+                background-color: red;
+            }
+        } */
+      
+        body{
+            background-color: red;
+        }
+
+        #p1, #p2, #p3, #p4, #p5{
+            display: none;
+        }
+
+        @media screen and (min-width:1200px){
+            body{
+                background-color: aqua;
+            }
+            #p1{
+                display: block;
+            }
+               
+          
+        }
+
+        @media screen and (min-width:992px) and (max-width:1199px){
+           body{
+              background-color: chocolate;
+           }
+            
+            #p2{
+                display: block;
+            }
+          
+        }
+        
+        
+        @media screen and (min-width:768px) and (max-width:991px){
+           body{
+              background-color: yellow;
+           }
+           
+            #p3{
+                display: block;
+            }
+            
+        }
+
+        
+        @media screen and (min-width:576px) and (max-width:767px){
+           body{
+              background-color: green;
+           }
+           
+             #p4{
+                display: block;
+            }
+            
+        }
+
+      
+        @media screen and (max-width:576px){
+           body{
+              background-color: gray;
+           }
+          
+             #p5{
+                display: block;
+            }
+        }
+  </style>
+</body>
+
+
+     <p id="p1">Extra large device </p>
+     <p id="p2">large device </p>
+     <p id="p3"> medium device</p>
+     <p id="p4">Small device </p>
+     <p id="p5">extra small device</p>
+    
+</html>

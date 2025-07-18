@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style type="text/css">
+        /* p:not(#p2){  /* not is use when we want to select all except one */
+            /* color: red;
+            font-size: 20px;
+        }
+        #p3::before{
+            content: "Hello ";
+            font-size: 25px;
+        }  */
+/* 
+        #p1::after{
+            content: url(../multimedia/krishna\ 2.jpg);
+            position: relative;
+            height: 10px;
+            width: 10px;
+            left: -20px;
+
+        } */
+
+
+        li{
+            color: red;
+            list-style: none;
+
+        }
+
+        li::before{
+            content: "\25ba";
+        }
+
+
+        /* marker is used for bullet points */
+        ::marker{
+            color: green;
+        }
+    </style>
+<body>
+    <ul>
+        <li id="li1">item 1</li>
+        <li id="li2">item 2</li>
+        <li id="li3">item 3</li>
+    </ul>
+    
+    <!-- <p id="p1">paragraph 1</p>
+    <p id="p2">paragraph 2</p>
+    <p id="p3">paragraph 3</p> -->
+</body>
+</html>
