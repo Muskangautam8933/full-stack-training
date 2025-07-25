@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- dynamically typed language mtlb : jab jab jo value ham initialize krte jate hai uske according type change ho jata hai type fix nhi hota hai -->
+    <script>
+      let a;
+      a = 5;
+      console.log(a, typeof a);
+
+      a = 5.87;
+      console.log(a, typeof a);
+
+      a = "M";
+      console.log(a, typeof a);
+
+      a = "Muskan";
+      console.log(a, typeof a);
+
+      a = undefined;
+      console.log(a, typeof a);
+
+      a = 5;
+      b = 5;
+      console.log(a+b);  //5
+      console.log(a-b);  //0
+      console.log(a*b);  //25
+      console.log(a/b);  //1
+      console.log(a%b);  //0
+      console.log(a+(a>b));  //5+false = 5+0=5
+      console.log(a+ (a==b)); //5+true=5+1=6
+      console.log(b+ (a==b)); //5true
+    </script>
+  </body>
+</html>

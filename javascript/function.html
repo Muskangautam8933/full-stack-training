@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function myfun(){
+        //     console.log("fun calling....");
+        // }
+        // myfun();  
+
+
+        // function calc_int(amt , rat, time){
+        //     return(amt*rat*time)/100;
+        // }
+        // let r = calc_int(5000,10,1);
+        // console.log(r);
+
+
+    //  ( ...c ) rest parameter it is used for multiple value.
+        // function mySum(a , b , ...c){  
+        //     console.log(a,b,c);
+        //     return( a + b );
+        // }
+        // let sum = mySum(10,20,40,50,60,70);
+        // console.log(sum);
+
+
+        //  function mySum(...c){  
+        //     let sum = 0;
+        //     for(let ele of c)
+        //         sum = sum + ele;
+        //         return sum;
+        // //  ( ...c ) rest parameter it is used for multiple value.
+        // }
+        // let r = mySum(10,20,50,60);
+        // console.log(r);
+
+
+
+        //javascript treat function as a first citizen.
+        //function calling
+        // function myfun(){
+        //     console.log("fun calling....");
+        // }
+        // console.log(myfun);
+        // let fn = myfun;
+        // fn();
+
+        //anonymous function
+        //IIFE : Immediately Invoked Function Expression
+        //there are two ways to call anonymous function
+
+        //first:function ko expression me convert kr diya
+        (function (a,b){
+            console.log("Anonymous fun calling...."+(a+b));
+        })(10,20);
+
+
+        let fn = (function (num){
+            return num**2;
+        })(3);
+        console.log(fn);
+
+
+        //second:
+    //    let fn = function (){
+    //         console.log("Anonymous fun calling....");
+    //     }
+    //     fn();
+    </script>
+</body>
+</html>

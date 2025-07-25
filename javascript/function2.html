@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // function outerFun(){
+      //     console.log("outer fun calling...");
+      //     function innerFun(){
+      //         console.log("inner fun calling...");
+      //     }
+      //    return innerFun;
+      // }
+
+      // let fn = outerFun();
+      // console.log(fn);
+      // fn();
+
+      function outerFun(name) {
+        console.log("outer fun calling...");
+        function innerFun(msg) {
+          console.log("inner fun calling...");
+          console.log(name, msg);
+        }
+        return innerFun;
+      }
+      //this is called closure
+      let fn = outerFun("Vansh");
+      console.log(fn);
+      fn("Chala gya...");
+    </script>
+  </body>
+</html>

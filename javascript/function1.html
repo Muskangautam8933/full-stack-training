@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //    const fn = function(){
+      //         console.log("anonymous fun calling....");
+      //     }
+      //     fn();
+
+      //Arrow function
+      //    const fn2 = (num)=> num ** 2;
+      //    let result = fn2(5);
+      //    console.log(result);
+
+      //jab ham bracket ke ander expression likhte hai to return likhna hota hai other wise return ko likhne ki need nhi hot hai automatic return kr deta hai
+      const fn2 = (num) => {
+        return num ** 2;
+      };
+      let result = fn2(5);
+      console.log(result);
+
+
+    //arrow function me ham multiple argument pass kr sakte hai default value bhii de skte hai solve hone ke baaa apne aap value return ho jayegi
+    const calc_int = (amt,rate,time) =>(amt*rate*time)/100;
+    let fn5 = calc_int(5000,10,1);
+    console.log(fn5);
+
+    </script>
+  </body>
+</html>
