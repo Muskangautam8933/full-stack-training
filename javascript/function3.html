@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //first way to create function:this is also called function declaration
+      //function name(){
+      //    *code
+      // }
+      //name();
+
+      // second way to create function:this is called function expression
+      // let fun = function(){
+      //   console.log(fun);
+      // }
+
+      //fat arrow function
+      //let fun = ()=>{
+      // }
+      //fun();
+
+      //this is default function if we don't pass any value then it will default undefiend
+      // function add(v1,v2){  //parameters
+      //     console.log(v1+v2);
+      // }
+      // add(); //arguments
+
+      //rest function(...):jab argument kai sare tb utne hi parameter banane padenge issse bachne ke liyr ham rest(...) ka use krte hai isko spread operator khte hai agar ... function ke parameter space me lage to wo rest operator hai and agar wo array and objects me lage to wo spread operator hota hai.
+      // function abcd(...val){
+      //     console.log(val);
+      // }
+      // abcd(1,2,3,4,5,6,7,8);
+
+      //return mtlb:jaha se aay ho vhi daal denge.
+      function abcd() {
+        return 12;
+      }
+      let val = abcd();
+      console.log(val);
+
+      //first class function : function ko value ki tarah treat kr sakte hai
+      function abcd(val) {
+        val();
+      }
+      abcd(function () {
+        console.log("hey");
+      });
+
+
+      //higher order function : ek aisa function hota hai jo return kare ek function ya phir accept kare ek function apne parameter me.
+      function abcd(val){
+           return function(){
+              console.log("hey siri");
+           }
+      }
+      abcd()();
+
+
+
+      //pure vs impure function:
+      //aisa function jo bahar ki value na badle vo pure function aur ek aisa function jo value badal de vo impure function hota hai.
+
+    //   let a = 12;
+    //   function fun1(){
+    //     console.log("hehehe");
+    //   }
+    //   fun1();
+
+    //   function fun2(){
+    //     a++;
+    //   }
+    //   fun2();
+
+    //closure : ek function jo return kare ek aur function aur return hone vala function hamesha use karega parent function ka koi variable.
+
+    function abcd(){
+        let a = 12;
+        return function(){
+          console.log(a);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

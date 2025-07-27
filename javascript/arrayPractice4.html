@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Reduce salaries to calculate total payroll
+        let salary =  [20000, 30000, 25000, 15000];
+        let totSalary = salary.reduce(function(accumulator,val){
+            return accumulator + val;
+        }, 0);
+        console.log(totSalary);
+    </script>
+</body>
+</html>

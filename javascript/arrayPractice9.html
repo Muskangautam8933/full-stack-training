@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+              //Use some() to check if any student failed
+              const marks = [20,30,40,50,60,70,80];
+              const anyStu = marks.some(function(val){
+                return val < 30;
+              })
+
+               if(anyStu){
+                    console.log("At least one Student is fail");
+                }else{
+                    console.log(" All Students are pass");
+                }
+    </script>
+  </body>
+</html>

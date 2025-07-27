@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //array method :
+      //Push method
+      let arr = [1, 2, 3, 4, 5, 6];
+      arr.push(90); //add 90 in array
+
+      //Pop method
+      let arr1 = [1, 2, 3, 4, 5, 6];
+      arr1.pop(); //remove last element of array
+
+      //Shift method :
+      let arr2 = [1, 2, 3, 4, 5, 6];
+      arr2.shift(); // remove the value from start of the array
+
+      //Unshift method
+      let arr3 = [1, 2, 3, 4, 5];
+      arr3.unshift(9); //it will add value from start of the array
+
+      //splice method
+      let arr4 = [1, 2, 3, 4, 5, 6, 7];
+      arr4.splice(2, 3); //it will remove the value from middle 2 means kis index se value hatani hai aur 3 means kitni value hatani hai
+      //ye hamare original array ko change kr dega
+
+      //slice method
+      let arr5 = [1, 2, 3, 4, 5, 6];
+      let newArr = arr5.slice(0, 3); //slice method real array me change nhi karta hai new array return krta hai 0 means kaha se array chaiye aur kaha tk chaiye
+      //ye hame new array return krta hai ye value nikaal kr deta hai
+
+      //reverrse method:
+      let arr6 = [1, 2, 3, 4, 5, 6];
+      arr6.reverse(); //it will reverse the array
+      //arr6 = [6,5,4,3,2,1]
+
+      //Sort method :
+      let arr7 = [11, 2, 13, 4, 5, 10];
+      let myArr = arr7.sort(function (a, b) {
+        return a - b; //it will return array in ascending order if we write b-a then it will return array in decending order.
+      });
+      //myArr = [2,4,5,10,11,13]
+
+    
+    //Map method
+    //map sirf tb use karna hai jab aapko ek naya  array banana hai pichle array ke data ke basis per
+    //map dikhte hi sath ke  man me ek blank array bna lo
+
+    let arr8 = [33,60,54,3,7,9,40,26];
+    let nArr = arr.map(function(val){
+        if(val > 15) return val;
+    }); //nArr =  [33,60,54,40,26]
+
+    //jab bhi apko aisa koi case dikh jay jaha perr ek array se naya array banega and wo anya array kuch value ko rakhega tb map lagega
+
+
+    //Filter method
+    let arr9 = [1,2,3,4,5,6,7,8];
+    //filter kuch value ko return krta hai kuvh ko nhi
+    let newArr2 = arr9.filter(function(val){
+        if(val > 4) return true;
+    }) //ans = [5,6,7,8]
+
+
+    //Reduce method:
+    //reduce method ka use ham tb karte hai jb hame single value ko return krna hai jaise ek array ke sare element ko add krke sum return kr do
+    let arr10 =  [1,2,3,4,5,6,7];
+    let ans = arr10.reduce(function(accumulator , val){
+        return accumulator + val;
+    },0)  //ans = 28
+
+
+    //Find method :
+    //find method is used to find the value from array if value exist then return otherwise not
+    let arr11 = [1,2,3,4,5,6];
+    let ans1 = arr11.find(function(val){
+        return val === 3; 
+    });
+    //ans1 = 3
+
+    //Some method:
+    //some method is used to retunr the value ex if any stu marks is greater than 85 then it will return;
+    let arr12 = [30,50,80,90,87,54,82];
+    let any = arr12.some(function(val){
+        return val > 87;
+    });
+    //any = true;
+
+
+    //Every method :
+    //every method is return true agar sare condition ko satisfied karenge agar ek bhi condition ko satidsfied nhi karega to ye false return karega.
+    let arr13 = [30,50,80,90,87,54,82];
+    let every = arr12.every(function(val){
+        return val > 30;
+    });
+    //every = true; 
+
+
+    //Spread operator:
+    //spread operator are used in array and object
+    let spread = [1,2,3,4,5,6,7,8];
+    let sr = [...spread];
+
+    //sr ek  nya array  bn jayega jisme sare element copy ho jaynge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
