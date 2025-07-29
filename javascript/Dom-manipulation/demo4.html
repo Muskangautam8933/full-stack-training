@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  
+  <body>
+      <button id="myBtn1" >button 1</button>
+       <button id="myBtn2" >button 2</button>
+       <div id="myDiv" style="border: 1px solid red;"></div>
+  </body>
+
+  
+  <script>
+   
+   const btn2 = document.getElementById('myBtn2');
+   btn2.addEventListener('click', ()=>{
+    const inpEle = document.createElement('input');
+    inpEle.setAttribute('type' , 'text');
+    inpEle.setAttribute('placeholder' , 'Enter Name');
+    inpEle.setAttribute('name', 'userName');
+    // console.log(inpEle);
+
+
+
+    let eleDiv = document.getElementById('myDiv');
+    eleDiv.append(inpEle);
+   })
+
+
+
+
+
+
+
+
+    const btn = document.getElementById('myBtn1');
+    btn.addEventListener('click' , ()=>{
+     const myH =  document.createElement('h1');
+     myH.textContent = "My First Heading";
+     myH.style.color = 'yellow';     
+      console.log(myH);
+
+      //it add the content after button  
+      document.body.append(myH);
+    });
+  </script>
+</html>

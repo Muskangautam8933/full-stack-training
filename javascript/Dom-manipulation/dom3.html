@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9f6fe4c0be.js" crossorigin="anonymous"></script>
+  </head>
+  <script>
+    //  console.log(ele);
+    //  console.log(ele.value);  //it show the value
+    //  console.log(ele.value.length); //it show the legth of password
+    //  console.log(ele.type); //it will show that it is password
+    //  console.log(ele.placeholder); //it will show the placeholder value
+    function myfun() {
+      const ele1 = document.getElementById("pwd");
+      ele1.type = (ele1.type === "password")? "text" : "password";
+    
+    //btn.textContent = (btn.textContent.trim() === "show")? "show" : "hide";
+    const btn = document.getElementById('myBtn'); 
+    let lst = btn.classList;
+      if(lst.contains('fa-eye')){
+        lst.replace('fa-eye','fa-eye-slash')
+      }
+      else{
+        lst.replace('fa-eye-slash', 'fa-eye')
+      }
+     
+
+
+
+
+    }
+  </script>
+
+
+  <body>
+    <input type="password" id="pwd" placeholder="Eg:12345@hp" />
+    <button id="myBtn" type="button" class="fa-solid fa-eye"> </button>
+   
+  </body>
+
+
+
+  <script>
+    const btn = document.getElementById("myBtn");
+    btn.addEventListener('click', myfun);
+
+    // btn.addEventListener('click' , ()=>{
+    //     alert("hello....");
+    // })
+  </script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //DOM :Document object model = dom provide the function that allow you to add,remove and modify parts of the document effectively.
+        // Dom is cross platform and language independent ways of manipulating HTML and XML
+        
+        function myfun(){
+          let ele = document.getElementById("myH");
+         
+        //   console.log(ele);
+        //   console.log(ele.textContent);
+        //   ele.textContent = "Hello world";
+       
+         ele.style.backgroundColor = 'red';
+         ele.style.color = 'white';
+         ele.style.textAlign = "center";
+         ele.style.border = "1px solid black";
+        
+
+
+        //   let ele1 = document.getElementById("myPara");
+        //   ele1.textContent = ele.textContent;
+        }
+
+
+
+
+    </script>
+</body>
+
+
+     <h1 id = "myH">Heading</h1>
+     <p id="myPara"></p>
+     <button type="button" onclick="myfun()">Click here</button>
+
+
+</html>

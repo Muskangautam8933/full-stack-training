@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //objects in javascript:key value pairs hote hai.
+      //   let obj = {
+      //     name: "muskan",
+      //     age:20,
+      //     course:b.tech
+      //   }
+      // for(let key in obj){  //for in loop
+      //     console.log(key ,obj[key]);
+      // }
+
+      //deep clone
+      // let obj = {
+      //     name:"harsh",
+      //     age:26,
+      //     email:"test@gmail.com",
+      //     address:{
+      //         city:"kanpur",
+      //         pincode:208014,
+      //     },
+      // };
+      // let obj2 = JSON.parse(JSON.stringify(obj));
+
+      //optional chaining:
+    //   let obj = {
+    //     name: "harsh",
+    //     age: 26,
+    //     email: "test@gmail.com",
+    //     addresses: { //yha per galat spelling hai phir bhi error nhi dega undefiend dega
+    //       city: "kanpur",
+    //       pincode: 208014,
+    //     },
+    //   };
+    //   obj?.address?.city;
+
+      //agar koi galati hogi toundefiend return karega otherwise value return karega.
+     
+     //can anobject key be a number or boolean try this
+     const obj = {
+        true:"yes",
+        42:"answer",
+     };
+     console.log(obj[true]);
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
