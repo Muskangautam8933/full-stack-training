@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,body{
+        height: 100%;
+        width: 100%;
+      }
+      #main{
+        height: 100%;
+        width: 100%;
+        background-color: #222;
+      }
+      #nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 50px;
+        width: 100%;
+        background-color: gray;
+      }
+      a{
+        color: #fff;
+        list-style: none;
+        text-decoration: none;
+      }
+      button{
+        padding: 3px;
+      }
+  </style>
+
+
+  <body>
+     <div id="main">
+        <div id="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <button>Click here</button>
+        </div>
+     </div>
+  </body>
+
+
+
+  <script>
+    //event bubbling ka mtlb hota hai agar hamne button per koi event nhi lagaya hai aur uske parent per event lagaya hai aur button per click kiya hai to event chal jayega. issi ko event bubbling khte  hai.
+      let nav = document.querySelector("#nav");
+      nav.addEventListener("click",function(){
+        alert("clicked");
+      })
+  </script>
+</html>

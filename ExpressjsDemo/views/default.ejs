@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr color="navy" size="5px" />
+    <h1 align="center">Application default page</h1>
+    <h3 align="center">Welcome <%= name%></h3>
+     <h3 align="center">Welcome <%- name%></h3>
+    <hr color="navy" size="5px" />
+
+
+
+    <!-- <%= msg%>   //jab hamko value render karani hai to = 
+      <%- msg%>   //jab hamko pure html render karani hai to -  -->
+
+
+    <% if(isValid) { %>
+         <h4>Welcome <%= name%></h4>
+        <p style="background-color: aqua; padding: 20px;" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, libero fugiat modi vel    maiores sed alias repudiandae architecto.</p>
+
+    <% }else { %>
+         <h4>Welcome Guest <%= name%></h4>
+        <p style="background-color: aqua; padding: 20px; color: brown;" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, libero fugiat modi vel    maiores sed alias repudiandae architecto.</p>
+
+
+    <% } %>
+</body>
+</html>

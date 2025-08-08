@@ -1,0 +1,72 @@
+Express command
+1) npm init : to make configuration file.
+2) npm init -y : isse package.js file ek bar me ban jayegi hamko sab kuch dubara batane ki zarurat nhi hoti hai.
+3) npm install packageName : 
+    ex = npm install express.
+
+4) npm uninstall packageName : 
+    ex = npm uninstall express 
+
+5) npm install packageName -save : 
+    ex = npm install express -save
+
+6) pm install packageName -g : global installation ham isko install krne ke baad apne project me use kr payenge
+     ex = npm install express -g
+
+7) npm list : it gives the list of modules in the current folder
+   ex = npm list
+
+8) npm list -g: it gives the list of modules in the global environment
+   ex = npm list -g
+
+9)npm i nodemon -save-dev : isko install karne ke baad hamko bar bar restart nhi karna padega
+
+
+10) npm start : ham tb likhte hai kyuki ye predefiend hota hai but agar start ki jagah kuch aur likhna hota hai jaise npm demoscript to ham iske bich npm run demoscript kar ke chalate hai
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+----------------------------------------------
+            How to use EJS:
+-----------------------------------------------
+1) to install ejs:
+      npm i ejs -save
+
+2) create view folder in application folder
+      views
+
+3) set view engine in index.js
+      app.set('view engine','ejs');
+
+4) instead of send use render('viewName')
+      response.render('default');
+
+
+-----------------------------------------------------------------
+How to add image/Stylesheets/javascript in express project
+------------------------------------------------------------------
+a) create "public" folder inside Application folder
+b) create another folder inside "public" name  "images"
+c) write below line in index.jd
+   app.use(express.static('public))
+
+CSS
+------
+a)create "stylesheets" folder inside "public"
+
+b)create styel1.css inside folder 
+    "stylesheets"
+     
+c) open "header.ejs",and link in "style1.css"
+     <link rel="stylesheet" href="stylesheets/style1.css">
+
+
+
+
+
+
+
+
