@@ -1,0 +1,22 @@
+npm init
+mpm init -y
+npm install packageName or npm i packageName
+npm install packageName -save
+npm list
+
+a) Install EJS
+npm i ejs -save
+b) Create views folder in Application folder
+c) Set view engine in ritik.js
+app.set('view engine', 'ejs');
+d) instead of send use render (res.render('viewName')
+
+How to add Images/CSS/JS in Express Project
+
+a) Create public folder in Application folder
+b) Create images folder in public folder
+
+c) Create stylesheets folder in public folder
+d) Create style1.css inside folder stylesheets
+e) Open "header.ejs" file and link "style1.css" file
+<link href="stylesheets/style1.css" rel="stylesheet" >

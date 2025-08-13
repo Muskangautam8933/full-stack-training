@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align ='center'>Application Default page</h1>
+    <h3>Welcome <%=name%></h3>
+    <h3>Welcome <% -name%></h3>
+    <hr color="navy" size ="5px"/>
+
+    <!-- <%= msg %>
+    <%- msg%> -->
+
+    <% if(isValid){ %>
+        <p style="background-color: aquamarine;">
+            <h4>Welcome <%= name%></h4>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis corrupti in corporis harum, non ipsum dolorum pariatur animi repellendus unde?
+
+        </p>
+    <% } else { %>
+        <p style ="background-color:red; ">
+            <h4>Welcome Guest</h4>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis corrupti in corporis harum, non ipsum dolorum pariatur animi repellendus unde?  
+        </p>
+    <% } %>
+       
+
+
+</body>
+</html>

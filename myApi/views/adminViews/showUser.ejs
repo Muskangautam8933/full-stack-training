@@ -1,0 +1,46 @@
+<%- include('./partials/header')%>
+<%- include('nav.ejs')%>
+
+<section>
+
+<section>
+    <table class="table table-bordered table- striped w-75 ms-auto mt-3 text-center">
+        <thead class="table-dark">
+            <tr>
+                <th>User Name</th>
+                <th>Password</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Active</th>
+                <th>Date of Reg.</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% userData.forEach((user)=>{%>
+                <tr>
+                    <td><%= user.userName %></td>
+                    <td><%= user.password %></td>
+                    <td><%= user.emailId %></td>
+                    <td><%= user.isActive %></td>
+                    <td><%= user.hasRole %></td>
+                    <td><%= new Date(user.createdAt).toLocaleString() %></td>
+                    <td><a href="/admin/editUser/<%= user._id %>" class="btn btn-sm btn-primary">Edit</a></td>
+                    <td><a href="/admin/deleteUser/<%= user._id %>" class="btn btn-sm btn-danger">Delete</a></td>
+
+                </tr>
+
+                <% })%>
+        </tbody>
+    </table>
+</section>
+
+
+
+    
+</section>
+
+
+
+<%- include('./partials/footer')%>
